@@ -22,7 +22,7 @@ export default function Home() {
         {
           event: 'INSERT',
           schema: 'public',
-          table: 'Udang Vaname',
+          table: 'udang_vaname',
         },
         () => {
           fetchData()
@@ -37,7 +37,7 @@ export default function Home() {
 
   async function fetchData() {
     const { data, error } = await supabase
-      .from('Udang Vaname')
+      .from('udang_vaname')
       .select('*')
       .order('timestamp', { ascending: false })
       .limit(5)
