@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@heroicons/react": "^2.2.0",
+    "@supabase/supabase-js": "^2.100.0",
     "axios": "^1.13.6",
     "framer-motion": "^12.18.1",
     "mqtt": "^5.15.1",
